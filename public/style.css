@@ -1,0 +1,32 @@
+body {
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+label#header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+}
+
+form {
+    display: table-row;
+    width: 20%;
+}
+
+.col-6 {
+    width: 50%;
+    margin-left: 50px;
+}
