@@ -1,6 +1,28 @@
 body {
 }
 
+.home
+{
+    font-size: 20px;
+    background: #6ea339;
+    color: white;
+}
+
+.home h1 {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.home a {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white
+}
+
 h1 {
     font-family: 'Amatic SC', cursive;
     display: flex;
@@ -21,7 +43,7 @@ label#header {
     display: flex;
 }
 
-form {
+form#messageForm {
     display: table-row;
     width: 20%;
 }
@@ -29,4 +51,10 @@ form {
 .col-6 {
     width: 50%;
     margin-left: 50px;
+}
+
+form#login, form#signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
 }

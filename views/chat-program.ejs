@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+
+<h1>Chat program</h1>
+
+<div class="container">
+
+    <form id="messageForm" method="post" action="/chat-program">
+        <!-- Name input -->
+        <h3>Message</h3>
+        <div class="form-outline mb-4">
+            <input type="text" id="name" class="form-control"/>
+            <label class="form-label" for="name">Name</label>
+        </div>
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+            <textarea class="form-control" id="message" rows="4"></textarea>
+            <label class="form-label" for="message">Message</label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-success btn-block mb-4">Send</button>
+    </form>
+    <div class="col-6">
+        <h3>Messages</h3>
+        <div id="allMessages"></div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/chat.js"></script>
+<script src="/mdb.min.js"></script>
+</body>
+</html>
