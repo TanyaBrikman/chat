@@ -35,10 +35,12 @@ io.sockets.on('connection', (socket) => {
         console.log('User disconnected')
     })
 
+
     socket.on('send mess', (data) => {
         io.sockets.emit('add mess', {name: data.name, mess: data.mess, className: data.className})
     })
 })
+
 app.use(cookieParser())
 app.use(bodyParser())
 app.use(express.static('public'))

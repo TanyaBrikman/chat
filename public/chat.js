@@ -33,7 +33,7 @@ $(function () {
     const $textarea = $('#message')
     const $allMessages = $('#allMessages')
 
-    $form.submit((event) => {
+        $form.submit((event) => {
         event.preventDefault()
         socket.emit('send mess',
             {
@@ -42,6 +42,8 @@ $(function () {
                 className: alertClass
             })
         $textarea.val('')
+
+
     })
 
     socket.on('add mess', (data) => {
